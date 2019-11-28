@@ -1,0 +1,42 @@
+= Project Loom: Fibers and Continuations
+
+Repository with the examples presented in the link:https://www.meetup.com/jvm-mx/[JVM Mexico Meetup]
+
+The slides of the talk are available in link:https://speakerdeck.com/mrpato/project-loom-fibers-and-continuations[Speaker Deck]
+
+The purpose of this repository is to show with 3 simple classes the behavior and how  to start in exploring the current state of the API for lightweight concurrency with Java. 
+
+The examples are the following: 
+
+* link:src/dev/aguacate/labs/fibers/demo/ContinuationsDemo.java[ContinuationsDemo]: Shows with a simple example how to use a `Continuation`, yield and resume it execution. 
+* link:src/dev/aguacate/labs/fibers/demo/FibersDemo.java[FibersDemo]: Starts a million fibers in order to show how simple is to create and schedule them. 
+* link:src/dev/aguacate/labs/fibers/demo/SecondFibersDemo.java[SecondFibersDemo]: Its intention is to show `deadlines`, `cancel-propagation` and `nesting` of `FiberScopes`, also shows a practical case of how a `Fiber` wraps a task into a `Continuation`. 
+
+== What do I need?
+
+These examples needs a special early access `OpenJdk (version: 14)` and a previous installed version of link:https://www.jetbrains.com/idea/[IntelliJ IDEA]: 
+
+1. Download the `jdk-14` from link:https://jdk.java.net/loom/[] select the one that fits your operating system. 
+
+2. Just decompress it in a folder of your selection. 
+
+3. Once installed the `jdk` is necessary to add the version to `IntelliJ IDEA`. To configure simply follow this link:https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/setting_up_environment.html[instructions]
+
+Once the installation and configuration of the `jdk` is ready everything is ready to be run with `IntelliJ IDEA`. 
+
+== Resources
+
+* link:https://github.com/openjdk/loom[Main Page]
+* link:https://wiki.openjdk.java.net/display/loom/Main[Wiki]
+* link:http://cr.openjdk.java.net/~rpressler/loom/Loom-Proposal.html[Proposal]
+* link:https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/[Notes on structured concurrency, or: Go statement considered harmful]
+* link:http://250bpm.com/blog:71[Structured Concurrency]
+* link:https://vorpus.org/blog/timeouts-and-cancellation-for-humans/[Timeouts and cancellation for humans]
+
+== Notes
+
+Some current API's are being rewritten and in constant change! Join the link:http://mail.openjdk.java.net/mailman/listinfo/loom-dev[mailing list] in order to keep yourself updated!
+
+If you need more information or help please go to my link:https://mrpato.dev[website]
+
+`Happy Coding!`
