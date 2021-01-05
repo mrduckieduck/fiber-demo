@@ -37,6 +37,6 @@ Once the installation and configuration of the `jdk` is ready everything is read
 
 Some current API's are being rewritten and in constant change! Join the link:http://mail.openjdk.java.net/mailman/listinfo/loom-dev[mailing list] in order to keep yourself updated!
 
-If you need more information or help please go to my link:https://mrpato.dev[website]
+If you need more information or help please go to my link:https://mrpato.tech[website]
 
 `Happy Coding!`
